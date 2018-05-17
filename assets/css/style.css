@@ -16,14 +16,27 @@ header {
     background-color: rgba(180, 120, 100, .8);
 }
 
-hr {
-    border-color: #ddd;
-    overflow: auto;
-}
-
 #nav-logo {
     height: 150px;
-    display: inline-block;
+}
+
+#header-name {
+
+}
+
+#header-blurb {
+
+}
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-link:hover {
+    background-color: rgba(200, 140, 120, 1);
+    border-radius: 10px;
 }
 
 #profile-content-card {
@@ -33,6 +46,11 @@ hr {
 #profile-portrait {
     width:250px;
     border-color: black;
+}
+
+hr {
+    border-color: #ddd;
+    overflow: auto;
 }
 
 #about-me-text {
