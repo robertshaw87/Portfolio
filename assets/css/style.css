@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 60, 50, .8);
+}
+
+header {
+    background-color: rgba(180, 120, 100, .8);
+}
+
+hr {
+    border-color: #ddd;
+    overflow: auto;
+}
+
+#nav-logo {
+    height: 150px;
+    display: inline-block;
+}
+
+#profile-content-card {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+#profile-portrait {
+    width:250px;
+    border-color: black;
+}
+
+#about-me-text {
+
+}
