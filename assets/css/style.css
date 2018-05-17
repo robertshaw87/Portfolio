@@ -42,6 +42,15 @@ header {
     border-radius: 10px;
 }
 
+#contact-email {
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.dropdown-image {
+    height: 30px;
+ }
+
 #profile-content-card {
     background-color: rgba(0, 0, 0, .6)
 }
@@ -64,6 +73,15 @@ hr {
 @media (max-width: 576px) {
     #header-text {
         display: none;
+    }
+    /* .dropdown-link{
+        padding: 0 10px !important;
+    } */
+    .dropdown-image {
+        height: 20px;
+    }
+    #contact-email {
+        line-height: 20px;
     }
     #profile-portrait {
         float:none;
