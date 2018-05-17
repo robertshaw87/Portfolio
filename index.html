@@ -25,7 +25,7 @@
             <div class="col"></div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left position-relative">
                 <img class="mr-3 float-left p-2" src="assets/images/my-logo.png" alt="Robert Shaw Logo" id="nav-logo">
-                <div class="text-light float-left mt-4">
+                <div class="text-light float-left mt-4" id="header-text">
                     <h1 id="header-name">Robert Shaw</h1>
                     <h6 id="header-blurb">Full Stack and Back End Developer</h6>
                 </div>
@@ -39,9 +39,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                            <div class="dropdown-menu navbar-dark">
+                              <a class="dropdown-item" href="#">Email</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">LinkedIn</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">GitHub</a>
+                            </div>
+                          </li>
                     </ul>
                 </nav>
             </div>
@@ -55,7 +62,7 @@
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">
                 <div class="card mt-5 text-light" id="profile-content-card">
                     <div class="card-body">
-                        <div class="card bg-dark m-1 mr-3 float-left" id="profile-portrait">
+                        <div class="card bg-dark m-1 mr-3" id="profile-portrait">
                             <img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">
                         </div>
                         <div class="card-text" id="about-me-text">
@@ -66,6 +73,7 @@
                             expanding and utilizing my knowledge base. Works well with others while maintaining a positive
                             attitude and developing strong professional bonds. Looking for an opportunity to begin a career
                             and apply my skills.</p>
+                            <button class="btn btn-light float-right" id="portfolio-button">My Portfolio</button>
                         </div>
 
                     </div>
