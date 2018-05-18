@@ -8,7 +8,6 @@ html {
 }
 
 body {
-    /* position: absolute; */
     min-width: 290px !important;
     width: auto !important;
     height: 100%;
@@ -19,21 +18,34 @@ header {
     background-color: rgba(180, 120, 100, .8);
 }
 
+button, a, #header-blurb {
+    font-family: 'Righteous', cursive;
+}
+
+h3, #header-name {
+    font-family: 'Comfortaa', cursive;
+}
+
+.project-card-title {
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Voces', cursive;
+}
+
 #nav-logo {
     height: 150px;
 }
 
-#header-name {
-
-}
-
-#header-blurb {
-
+#header-text {
+    display: none;
 }
 
 .nav-wrapper {
     position: absolute;
-    bottom: 5px;
+    bottom: 1px;
     right: 0;
 }
 
@@ -44,6 +56,9 @@ header {
 
 .nav-button {
     border-color: transparent !important;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .nav-button:hover, .nav-button:focus {
@@ -60,7 +75,7 @@ header {
 }
 
 .dropdown-image {
-    height: 30px;
+    height: 20px;
  }
 
 .black-background {
@@ -68,22 +83,17 @@ header {
 }
 
 #profile-portrait {
-    width:250px;
-    float: left;
+    float:none;
+    width: 250px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 20px !important;
     border-color: black;
 }
 
 hr {
     border-color: #ddd;
     overflow: auto;
-}
-
-#about-me-text {
-
-}
-
-.project-button {
-
 }
 
 .project-button-active {
@@ -97,7 +107,14 @@ hr {
 
 .project-card-overlay {
     visibility: hidden !important;
-    background-color: rgba(0, 0, 0, .8)
+    background-color: rgba(0, 0, 0, .8);
+    padding: 0 !important;
+}
+
+.project-card-descrip {
+    padding: 15px !important;
+    margin: 0 !important;
+    font-size: 17px;
 }
 
 .project-card:hover .project-card-overlay, .project-card-overlay:hover {
@@ -110,8 +127,6 @@ hr {
     right: 0;
     left: 0;
     margin: auto;
-    /* left: 50%; */
-    /* transform: translate(-50%, 0); */
 }
 
 .project-card-content a {
@@ -128,32 +143,52 @@ hr {
     color: #f8f9fa;
 }
 
-/* .project-link-deployed {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-}
-
-.project-link-github {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-} */
-
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     #header-text {
-        display: none;
+        display: initial;
     }
     .dropdown-image {
-        height: 20px;
-    }
-    #contact-email {
-        line-height: 20px;
+        height: 30px;
     }
     #profile-portrait {
-        float:none;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-bottom: 20px !important;
+        height: auto;
+        margin-right: 20px !important;
+        margin-bottom: 10px !important;
+        float: left;
+    }
+    .project-card-overlay {
+        padding: 30px !important;
+    }
+    .project-card-descrip {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-card-overlay {
+        padding: 10px !important;
+        padding-top: 15px !important;
+    }
+    .project-card-descrip {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-card-overlay {
+        padding: 15px !important;
+        padding-top: 25px !important;
+    }
+    .project-card-descrip {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project-card-overlay {
+        padding: 5px !important;
+    }
+    .project-card-descrip {
+        font-size: 16px;
     }
 }

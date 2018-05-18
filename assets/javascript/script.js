@@ -44,9 +44,9 @@ function displayHome() {
         '<div class="row m-0">' + 
             '<div class="col"></div>' + 
             '<div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">' + 
-                '<div class="card mt-5 text-light black-background" id="profile-content-card">' + 
+                '<div class="card mt-5 text-light black-background animated zoomIn" id="profile-content-card">' + 
                     '<div class="card-body">' + 
-                        '<div class="card bg-dark m-1 mr-3" id="profile-portrait">' + 
+                        '<div class="card bg-dark m-1" id="profile-portrait">' + 
                             '<img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">' + 
                         '</div>' + 
                         '<div class="card-text" id="about-me-text">' + 
@@ -75,7 +75,7 @@ function displayProfile() {
                         '<div class="card mt-5 text-light black-background" id="project-buttons-card">' + 
                             '<div class="card-body">' + 
                                 '<div class="card-text text-center">' + 
-                                    '<h4>Projects</h4>' + 
+                                    '<h3>Projects</h3>' + 
                                     '<hr>' + 
                                     '<button class="btn btn-outline-light project-button project-button-active" data-tag="Show All" id="show-all">Show All</button>' + 
                                 '</div>' + 
@@ -99,7 +99,7 @@ function displayButtons() {
     $("#project-buttons-area").empty();
     for (var i = 0; i < projectButtonsList.length; i++) {
         var newButton = $("<button>");
-        newButton.addClass("btn btn-outline-light project-button ml-2 mr-2 mt-3");
+        newButton.addClass("btn btn-outline-light project-button ml-2 mr-2 mt-3 animated fadeIn");
         newButton.data("tag", projectButtonsList[i]);
         newButton.text(projectButtonsList[i]);
         $("#project-buttons-area").append(newButton);
@@ -124,13 +124,13 @@ function makeCard(proj) {
         '<div class="card-img-overlay project-card-overlay">' + 
                 '<p class="card-text mb-4 project-card-descrip">' + proj.description + '</p>' + 
                 '<div class="project-card-content p-0 m-0 text-center">' + 
-                    '<a class="card-text p-2 mr-2 project-link-deployed" href="' + proj.url + '" target="_blank">Deployed Site</a>' + 
-                    '<a class="card-text p-2 ml-2 project-link-github" href="' + proj.GHurl + '">Github Page</a>' + 
+                    '<a class="card-text p-2 mr-1" href="' + proj.url + '" target="_blank">Deployed Site</a>' + 
+                    '<a class="card-text p-2 ml-1" href="' + proj.GHurl + '">Github Page</a>' + 
                 '</div>' + 
         '</div>'
     );
     var cardWrapper = $("<div>");
-    cardWrapper.addClass("col-12 col-lg-12 col-xl-6");
+    cardWrapper.addClass("col-12 col-lg-12 col-xl-6 animated flipInX");
     cardWrapper.html(tempCard);
     return cardWrapper;
 }
