@@ -79,7 +79,8 @@ p {
  }
 
 .black-background {
-    background-color: rgba(0, 0, 0, .7)
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 20px;
 }
 
 #profile-portrait {

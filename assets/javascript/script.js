@@ -52,7 +52,7 @@ function displayHome() {
                         '<div class="card-text" id="about-me-text">' + 
                             '<h3>About Me</h3>' + 
                             '<hr>' + 
-                            '<p>Full Stack and Back End developer in training. Adept at leveraging undergraduate education in Computer Science and experience with online resources to rapidly learn new technologies. Passionate about expanding and utilizing my knowledge base. Works well with others while maintaining a positive attitude and developing strong professional bonds. Looking for an opportunity to begin a career and apply my skills.</p>' + 
+                            "<p>Hello! My name is Robert Shaw, and I'm a Full Stack and Back End developer in training.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to begin a career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>" + 
                             '<button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>' + 
                         '</div>' + 
                     '</div>' + 
