@@ -1,6 +1,41 @@
-var projectList;
+var projectList = [{name: "MoveMe",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Google Maps", "Show All"],
+                    image: "../images/",
+                    description: "MoveMe is the all in one app for getting involved in your local community.",
+                    url: "https://robertshaw87.github.io/MoveMe/",
+                    GHurl: "https://github.com/robertshaw87/MoveMe"
+                }, {name: "Rock Paper Scissors",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Show All"],
+                    image: "../images/",
+                    description: "Play with other users over the web or chat with the built in service.",
+                    url: "https://robertshaw87.github.io/Rock-Paper-Scissors/",
+                    GHurl: "https://github.com/robertshaw87/Rock-Paper-Scissors"
+                }, {name: "Animal Facts!",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    image: "../images/",
+                    description: "Tackle trivia questions and learn new facts. Be wary of the time limit!",
+                    url: "https://robertshaw87.github.io/Trivia-Game/",
+                    GHurl: "https://github.com/robertshaw87/Trivia-Game"
+                }, {name: "Triwizard Dueling Arena",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    image: "../images/",
+                    description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
+                    url: "https://robertshaw87.github.io/Battle-Game/",
+                    GHurl: "https://github.com/robertshaw87/Battle-Game"
+                }, {name: "Explore the Stars",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    image: "../images/",
+                    description: "Guess the chosen word within a limited number of tries!",
+                    url: "https://robertshaw87.github.io/Word-Guess-Game/",
+                    GHurl: "https://github.com/robertshaw87/Word-Guess-Game"
+                }, {name: "Giphy Pets Library",
+                    tags: ["Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap", "Show All"],
+                    image: "../images/",
+                    description: "Explore a wide variety of cute gifs from Giphy. Save your favorites or download them at the click of a button!",
+                    url: "https://robertshaw87.github.io/Giphy-Library/",
+                    GHurl: "https://github.com/robertshaw87/Giphy-Library"
+                }];
 var projectButtonsList = ["Html", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Google Maps"]
-var currPortfolio;
 
 function displayHome() {
     $("#home-button").addClass("current-page");
@@ -42,7 +77,7 @@ function displayProfile() {
                                 '<div class="card-text text-center">' + 
                                     '<h4>Projects</h4>' + 
                                     '<hr>' + 
-                                    '<button class="btn btn-outline-light project-button project-button-active" data-tag="show-all" id="show-all">Show All</button>' + 
+                                    '<button class="btn btn-outline-light project-button project-button-active" data-tag="Show All" id="show-all">Show All</button>' + 
                                 '</div>' + 
                                 '<div class="card-text text-center" id="project-buttons-area">' + 
                                 '</div>' + 
@@ -57,6 +92,7 @@ function displayProfile() {
         '</div>'
     );
     displayButtons();
+    displayProjects("Show All")
 }
 
 function displayButtons() {
@@ -71,7 +107,16 @@ function displayButtons() {
 }
 
 function displayProjects (tag) {
-    console.log(tag)
+    $("#project-display-area").empty();
+    for (var i = 0; i < projectList.length; i++) {
+        if (projectList[i].tags.indexOf(tag) != -1) {
+            appendProject(projectList[i]);
+        }
+    }
+}
+
+function appendProject(proj) {
+    console.log(proj)
 }
 
 $(document).on("click", "#home-button", displayHome);
