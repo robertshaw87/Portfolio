@@ -30,8 +30,8 @@
                     <h6 id="header-blurb">Full Stack and Back End Developer</h6>
                 </div>
                 <div class="nav-wrapper d-flex flex-column flex-sm-row justify-content-end">
-                    <button class="btn btn-outline-light nav-button current-page" id="home-button">Home</button>
-                    <button class="btn btn-outline-light nav-button" id="portfolio-button">Portfolio</button>
+                    <button class="btn btn-outline-light nav-button" id="home-button">Home</button>
+                    <button class="btn btn-outline-light nav-button current-page" id="portfolio-button">Portfolio</button>
                     <button class="btn btn-outline-light dropdown-toggle nav-button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contact
                     </button>
@@ -57,28 +57,55 @@
 
     <main class="container-fluid" id="main-display">
         <div class="row m-0">
-            <div class="col"></div>
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">
-                <div class="card mt-5 text-light black-background" id="profile-content-card">
-                    <div class="card-body">
-                        <div class="card bg-dark m-1 mr-3" id="profile-portrait">
-                            <img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">
+            <div class="col-0 col-sm-1 col-xl-2"></div>
+            <div class="col-12 col-sm-10 col-xl-8 p-0">
+                <div class="row m-0">
+                    <div class="col-12 col-md-4 col-lg-3 p-0">
+                        <div class="card mt-5 text-light black-background" id="project-buttons-card">
+                            <div class="card-body">
+                                <div class="card-text text-center">
+                                    <h4>Projects</h4>
+                                    <hr>
+                                    <button class="btn btn-outline-light project-button project-button-active" data-tag="show-all" id="show-all">Show All</button>
+                                </div>
+                                <div class="card-text text-center" id="project-buttons-area">
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-text" id="about-me-text">
-                            <h3>About Me</h3>
-                            <hr>
-                            <p>Full Stack and Back End developer in training. Adept at leveraging undergraduate education in Computer
-                            Science and experience with online resources to rapidly learn new technologies. Passionate about
-                            expanding and utilizing my knowledge base. Works well with others while maintaining a positive
-                            attitude and developing strong professional bonds. Looking for an opportunity to begin a career
-                            and apply my skills.</p>
-                            <button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>
-                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9 p-3 mt-5 text-center" id="project-display-area">
+
                     </div>
                 </div>
             </div>
-            <div class="col"></div>
+            <div class="col-0 col-sm-1 col-xl-2"></div>
         </div>
+
+        <!-- <div class="row p-0">
+                <div class="col"></div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">
+                    <div class="card mt-5 text-light black-background" id="profile-content-card">
+                        <div class="card-body">
+                            <div class="card bg-dark m-1 mr-3" id="profile-portrait">
+                                <img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">
+                            </div>
+                            <div class="card-text" id="about-me-text">
+                                <h3>About Me</h3>
+                                <hr>
+                                <p>Full Stack and Back End developer in training. Adept at leveraging undergraduate education in Computer
+                                Science and experience with online resources to rapidly learn new technologies. Passionate about
+                                expanding and utilizing my knowledge base. Works well with others while maintaining a positive
+                                attitude and developing strong professional bonds. Looking for an opportunity to begin a career
+                                and apply my skills.</p>
+                                <button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div> -->
     </main>
 
 
