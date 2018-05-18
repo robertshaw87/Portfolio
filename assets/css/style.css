@@ -16,6 +16,9 @@ body {
 
 header {
     background-color: rgba(180, 120, 100, .8);
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgba(210, 150, 130, 1);
 }
 
 button, a, #header-blurb {
@@ -45,7 +48,7 @@ p {
 
 .nav-wrapper {
     position: absolute;
-    bottom: 1px;
+    bottom: -3px;
     right: 0;
 }
 
@@ -56,9 +59,6 @@ p {
 
 .nav-button {
     border-color: transparent !important;
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 .nav-button:hover, .nav-button:focus {
@@ -146,6 +146,15 @@ hr {
 @media (min-width: 576px) {
     #header-text {
         display: initial;
+    }
+    .nav-button {
+        border-color: transparent !important;
+        border-bottom: none !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .current-page {
+        border-color: #f8f9fa !important;
     }
     .dropdown-image {
         height: 30px;
