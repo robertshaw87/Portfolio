@@ -1,4 +1,5 @@
 html {
+    min-width: 290px !important;
     min-height: 100%;
     background-image: url("../images/background.jpg");
     background-color: rgba(50, 30, 10, .75);
@@ -8,7 +9,6 @@ html {
 }
 
 body {
-    min-width: 290px !important;
     width: auto !important;
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
@@ -85,7 +85,7 @@ p {
 
 #profile-portrait {
     float:none;
-    width: 250px;
+    width: 225px;
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 20px !important;
@@ -115,7 +115,7 @@ hr {
 .project-card-descrip {
     padding: 15px !important;
     margin: 0 !important;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .project-card:hover .project-card-overlay, .project-card-overlay:hover {
@@ -137,6 +137,7 @@ hr {
     border-width: 1px;
     border-color: #f8f9fa;
     border-radius: 5px;
+    font-size: 12px !important;
 }
 
 .project-card-content a:hover {
@@ -172,6 +173,10 @@ hr {
     .project-card-descrip {
         font-size: 20px;
     }
+    .project-card-content a {
+        font-size: 22px;
+    }
+    
 }
 
 @media (min-width: 768px) {
