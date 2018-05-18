@@ -31,20 +31,37 @@ header {
 
 }
 
-.navbar {
+.nav-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     right: 0;
 }
 
-.nav-link:hover {
-    background-color: rgba(200, 140, 120, 1);
-    border-radius: 10px;
+.btn.focus, .btn:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.nav-button {
+    border-color: transparent !important;
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: rgba(210, 150, 130, 1) !important;
+    color: #f8f9fa !important;
+}
+
+.current-page {
+    border-color: #f8f9fa !important;
 }
 
 #contact-email {
     line-height: 30px;
     font-weight: bold;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(250, 190, 170, .4) !important;
 }
 
 .dropdown-image {

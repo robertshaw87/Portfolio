@@ -23,41 +23,33 @@
     <header class="container-fluid">
         <div class="row">
             <div class="col"></div>
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left position-relative">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left position-relative" id="header-wrapper">
                 <img class="mr-3 float-left p-2" src="assets/images/my-logo.png" alt="Robert Shaw Logo" id="nav-logo">
                 <div class="text-light float-left mt-4" id="header-text">
                     <h1 id="header-name">Robert Shaw</h1>
                     <h6 id="header-blurb">Full Stack and Back End Developer</h6>
                 </div>
-                <nav class="navbar navbar-expand-sm navbar-dark p-2">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
-                                <span class="sr-only">(current)</span>
+                <div class="nav-wrapper d-flex flex-column flex-sm-row justify-content-end">
+                    <button class="btn btn-outline-light nav-button current-page" id="home-button">Home</button>
+                    <button class="btn btn-outline-light nav-button" id="portfolio-button">Portfolio</button>
+                    <button class="btn btn-outline-light dropdown-toggle nav-button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact
+                    </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="mailto:robertshaw87@gmail.com">
+                                <img class="mr-2 dropdown-image" src="assets/images/Gmail.png" alt="My Gmail">
+                                <span id="contact-email">Email Me</span>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
-                            <div class="dropdown-menu navbar-dark">
-                                <a class="dropdown-item" href="mailto:robertshaw87@gmail.com">
-                                    <img class="mr-2 dropdown-image" src="assets/images/Gmail.png" alt="My Gmail">
-                                    <span id="contact-email">Email Me</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="https://www.linkedin.com/in/robert-shaw-425a2015b/">
-                                    <img class="dropdown-image" src="assets/images/LinkedIn.png" alt="My LinkedIn">
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="https://github.com/robertshaw87">
-                                    <img class="dropdown-image" src="assets/images/GitHub.png" alt="My GitHub">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/robert-shaw-425a2015b/" target="_blank">
+                                <img class="dropdown-image" src="assets/images/LinkedIn.png" alt="My LinkedIn">
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://github.com/robertshaw87" target="_blank">
+                                <img class="dropdown-image" src="assets/images/GitHub.png" alt="My GitHub">
+                            </a>
+                        </div>
+                </div>
             </div>
             <div class="col"></div>
         </div>
@@ -80,7 +72,7 @@
                             expanding and utilizing my knowledge base. Works well with others while maintaining a positive
                             attitude and developing strong professional bonds. Looking for an opportunity to begin a career
                             and apply my skills.</p>
-                            <button class="btn btn-light float-right" id="portfolio-button">My Portfolio</button>
+                            <button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>
                         </div>
 
                     </div>
