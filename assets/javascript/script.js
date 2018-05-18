@@ -1,36 +1,36 @@
 var projectList = [{name: "MoveMe",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Google Maps", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/MoveMe.jpg",
                     description: "MoveMe is the all in one app for getting involved in your local community.",
                     url: "https://robertshaw87.github.io/MoveMe/",
                     GHurl: "https://github.com/robertshaw87/MoveMe"
                 }, {name: "Rock Paper Scissors",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/RPS.jpg",
                     description: "Play with other users over the web or chat with the built in service.",
                     url: "https://robertshaw87.github.io/Rock-Paper-Scissors/",
                     GHurl: "https://github.com/robertshaw87/Rock-Paper-Scissors"
                 }, {name: "Animal Facts!",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/Trivia.jpg",
                     description: "Tackle trivia questions and learn new facts. Be wary of the time limit!",
                     url: "https://robertshaw87.github.io/Trivia-Game/",
                     GHurl: "https://github.com/robertshaw87/Trivia-Game"
                 }, {name: "Triwizard Dueling Arena",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/Battle.jpg",
                     description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
                     url: "https://robertshaw87.github.io/Battle-Game/",
                     GHurl: "https://github.com/robertshaw87/Battle-Game"
                 }, {name: "Explore the Stars",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/WordGuess.jpg",
                     description: "Guess the chosen word within a limited number of tries!",
                     url: "https://robertshaw87.github.io/Word-Guess-Game/",
                     GHurl: "https://github.com/robertshaw87/Word-Guess-Game"
                 }, {name: "Giphy Pets Library",
                     tags: ["Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap", "Show All"],
-                    image: "../images/",
+                    image: "assets/images/Giphy.jpg",
                     description: "Explore a wide variety of cute gifs from Giphy. Save your favorites or download them at the click of a button!",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
                     GHurl: "https://github.com/robertshaw87/Giphy-Library"
@@ -110,13 +110,24 @@ function displayProjects (tag) {
     $("#project-display-area").empty();
     for (var i = 0; i < projectList.length; i++) {
         if (projectList[i].tags.indexOf(tag) != -1) {
-            appendProject(projectList[i]);
+            $("#project-display-area").append(makeCard(projectList[i]));
         }
     }
 }
 
-function appendProject(proj) {
+function makeCard(proj) {
     console.log(proj)
+    var tempCard = $("<div>");
+    tempCard.addClass("card bg-dark text-white mb-3 project-card");
+    tempCard.html(
+        '<img class="card-img" src="' + proj.image + '" alt="Card image">' + 
+        '<div class="card-img-overlay project-card-overlay">' + 
+            '<h5 class="card-title">' + proj.name + '</h5>' + 
+            '<p class="card-text">' + proj.description + '</p>' + 
+            '<p class="card-text">Last updated 3 mins ago</p>' + 
+        '</div>'
+    )
+    return tempCard;
 }
 
 $(document).on("click", "#home-button", displayHome);

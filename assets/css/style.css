@@ -55,11 +55,6 @@ header {
     border-color: #f8f9fa !important;
 }
 
-#contact-email {
-    line-height: 30px;
-    font-weight: bold;
-}
-
 .dropdown-item:hover {
     background-color: rgba(250, 190, 170, .4) !important;
 }
