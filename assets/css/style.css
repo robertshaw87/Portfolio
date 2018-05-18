@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    min-height: 100%;
     background-image: url("../images/background.jpg");
     background-color: rgba(50, 30, 10, .75);
     background-size: cover;
@@ -90,6 +90,55 @@ hr {
     color: #f8f9fa;
     background-color: rgba(210, 150, 130, 1);
 }
+
+.project-card-title {
+    background-color: rgba(170, 110, 90, .9);
+}
+
+.project-card-overlay {
+    visibility: hidden !important;
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.project-card:hover .project-card-overlay, .project-card-overlay:hover {
+    visibility: visible !important;
+}
+
+.project-card-content {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+}
+
+.project-card-content a {
+    color: inherit;
+    text-decoration: inherit;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.project-card-content a:hover {
+    background-color: rgba(210, 150, 130, 1);
+    color: #f8f9fa;
+}
+
+/* .project-link-deployed {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.project-link-github {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+} */
 
 @media (max-width: 576px) {
     #header-text {

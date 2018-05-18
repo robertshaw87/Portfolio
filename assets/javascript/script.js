@@ -31,7 +31,7 @@ var projectList = [{name: "MoveMe",
                 }, {name: "Giphy Pets Library",
                     tags: ["Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap", "Show All"],
                     image: "assets/images/Giphy.jpg",
-                    description: "Explore a wide variety of cute gifs from Giphy. Save your favorites or download them at the click of a button!",
+                    description: "Explore a wide variety of gifs from Giphy and save your favorites.",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
                     GHurl: "https://github.com/robertshaw87/Giphy-Library"
                 }];
@@ -79,12 +79,12 @@ function displayProfile() {
                                     '<hr>' + 
                                     '<button class="btn btn-outline-light project-button project-button-active" data-tag="Show All" id="show-all">Show All</button>' + 
                                 '</div>' + 
-                                '<div class="card-text text-center" id="project-buttons-area">' + 
-                                '</div>' + 
+                                '<div class="card-text text-center" id="project-buttons-area"></div>' + 
                             '</div>' + 
                         '</div>' + 
                     '</div>' + 
-                    '<div class="col-12 col-md-8 col-lg-9 p-3 mt-5 text-center" id="project-display-area">' + 
+                    '<div class="col-12 col-md-8 col-lg-9 p-3 mt-5 text-center">' + 
+                        '<div class="row m-0" id="project-display-area"></div>' + 
                     '</div>' + 
                 '</div>' + 
             '</div>' + 
@@ -116,18 +116,23 @@ function displayProjects (tag) {
 }
 
 function makeCard(proj) {
-    console.log(proj)
     var tempCard = $("<div>");
-    tempCard.addClass("card bg-dark text-white mb-3 project-card");
+    tempCard.addClass("card bg-dark text-white mb-3 project-card position-relative");
     tempCard.html(
-        '<img class="card-img" src="' + proj.image + '" alt="Card image">' + 
+        '<div class="card-header p-2 project-card-title">' + proj.name + '</div>' + 
+        '<img class="card-img-bottom" src="' + proj.image + '" alt="Card image">' + 
         '<div class="card-img-overlay project-card-overlay">' + 
-            '<h5 class="card-title">' + proj.name + '</h5>' + 
-            '<p class="card-text">' + proj.description + '</p>' + 
-            '<p class="card-text">Last updated 3 mins ago</p>' + 
+                '<p class="card-text mb-4 project-card-descrip">' + proj.description + '</p>' + 
+                '<div class="project-card-content p-0 m-0 text-center">' + 
+                    '<a class="card-text p-2 mr-2 project-link-deployed" href="' + proj.url + '" target="_blank">Deployed Site</a>' + 
+                    '<a class="card-text p-2 ml-2 project-link-github" href="' + proj.GHurl + '">Github Page</a>' + 
+                '</div>' + 
         '</div>'
-    )
-    return tempCard;
+    );
+    var cardWrapper = $("<div>");
+    cardWrapper.addClass("col-12 col-lg-12 col-xl-6");
+    cardWrapper.html(tempCard);
+    return cardWrapper;
 }
 
 $(document).on("click", "#home-button", displayHome);
