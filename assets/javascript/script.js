@@ -46,58 +46,58 @@ var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google
 function displayHome() {
     $("#home-button").addClass("current-page");
     $("#portfolio-button").removeClass("current-page");
-    $("#main-display").html(
-        '<div class="row m-0">' + 
-            '<div class="col"></div>' + 
-            '<div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">' + 
-                '<div class="card mt-5 text-light black-background animated zoomIn" id="profile-content-card">' + 
-                    '<div class="card-body">' + 
-                        '<div class="card bg-dark m-1" id="profile-portrait">' + 
-                            '<img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">' + 
-                        '</div>' + 
-                        '<div class="card-text" id="about-me-text">' + 
-                            '<h3>About Me</h3>' + 
-                            '<hr>' + 
-                            "<p>Hello! My name is Robert Shaw, and I'm a Full Stack and Back End developer.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to grow my career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>" + 
-                            '<button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>' + 
-                        '</div>' + 
-                    '</div>' + 
-                '</div>' + 
-            '</div>' + 
-            '<div class="col"></div>' + 
-        '</div>'
-    )
+    $("#main-display").html(`
+        <div class="row m-0">
+            <div class="col"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 p-0">
+                <div class="card mt-5 text-light black-background animated zoomIn" id="profile-content-card">
+                    <div class="card-body">
+                        <div class="card bg-dark m-1" id="profile-portrait">
+                            <img class="card-img" src="assets/images/robert-shaw.jpg" alt="Robert Shaw">
+                        </div>
+                        <div class="card-text" id="about-me-text">
+                            <h3>About Me</h3>
+                            <hr>
+                            <p>Hello! My name is Robert Shaw, and I'm a Full Stack and Back End developer.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to grow my career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>
+                            <button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    `)
 }
 
 function displayProfile() {
     $("#home-button").removeClass("current-page");
     $("#portfolio-button").addClass("current-page");
-    $("#main-display").html(
-        '<div class="row m-0">' + 
-            '<div class="col-0 col-sm-1 col-xl-2"></div>' + 
-            '<div class="col-12 col-sm-10 col-xl-8 p-0">' + 
-                '<div class="row m-0">' + 
-                    '<div class="col-12 col-md-4 col-lg-3 p-0">' + 
-                        '<div class="card mt-5 text-light black-background" id="project-buttons-card">' + 
-                            '<div class="card-body text-center">' + 
-                                '<div class="card-text text-center">' + 
-                                    '<h3>Projects</h3>' + 
-                                    '<hr>' + 
-                                    '<button class="btn btn-outline-light project-button project-button-active mb-4 p-2 pr-5 pl-5" data-tag="Show All" id="show-all">Show All</button>' + 
-                                '</div>' + 
-                                '<div class="card-text text-center" id="project-buttons-area"></div>' + 
-                                '<button class="btn btn-outline-light project-button mt-4 p-2 pr-5 pl-5 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>' + 
-                            '</div>' + 
-                        '</div>' + 
-                    '</div>' + 
-                    '<div class="col-12 col-md-8 col-lg-9 p-3 mt-5 text-center">' + 
-                        '<div class="row m-0" id="project-display-area"></div>' + 
-                    '</div>' + 
-                '</div>' + 
-            '</div>' + 
-            '<div class="col-0 col-sm-1 col-xl-2"></div>' + 
-        '</div>'
-    );
+    $("#main-display").html(`
+        <div class="row m-0">
+            <div class="col-0 col-sm-1 col-xl-2"></div>
+            <div class="col-12 col-sm-10 col-xl-8 p-0">
+                <div class="row m-0">
+                    <div class="col-12 col-md-4 col-lg-3 p-0">
+                        <div class="card mt-5 text-light black-background" id="project-buttons-card">
+                            <div class="card-body text-center">
+                                <div class="card-text text-center">
+                                    <h3>Projects</h3>
+                                    <hr>
+                                    <button class="btn btn-outline-light project-button project-button-active mb-4 p-2 pr-5 pl-5" data-tag="Show All" id="show-all">Show All</button>
+                                </div>
+                                <div class="card-text text-center" id="project-buttons-area"></div>
+                                <button class="btn btn-outline-light project-button mt-4 p-2 pr-5 pl-5 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9 p-3 mt-5 text-center">
+                        <div class="row m-0" id="project-display-area"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-0 col-sm-1 col-xl-2"></div>
+        </div>
+    `);
     displayButtons();
     displayProjects("Show All")
 }
@@ -125,18 +125,18 @@ function displayProjects (tag) {
 function makeCard(proj) {
     var tempCard = $("<div>");
     tempCard.addClass("card bg-dark text-white mb-3 project-card position-relative");
-    tempCard.html(
-        '<div class="card-header p-2 project-card-title">' + proj.name + '</div>' + 
-        '<img class="card-img-bottom" src="' + proj.image + '" alt="Card image">' + 
-        '<div class="card-img-overlay project-card-overlay">' + 
-                '<p class="card-text mb-4 project-card-descrip">' + proj.description + '</p>' + 
-                '<div class="project-card-content p-0 m-0 text-center">' + 
-                    '<a class="card-text p-2 ml-1" href="' + proj.GHurl + '" target="_blank">Github Page</a>' + 
-                '</div>' + 
-        '</div>'
-    );
+    tempCard.html(`
+        <div class="card-header p-2 project-card-title">${proj.name}</div>
+        <img class="card-img-bottom" src="${proj.image}" alt="Card image">
+        <div class="card-img-overlay project-card-overlay">
+                <p class="card-text mb-4 project-card-descrip">${proj.description}</p>
+                <div class="project-card-content p-0 m-0 text-center">
+                    <a class="card-text p-2 ml-1" href="${proj.GHurl}" target="_blank">Github Page</a>
+                </div>
+        </div>
+    `);
     if (proj.url) {
-        tempCard.find(".project-card-content").prepend('<a class="card-text p-2 mr-1" href="' + proj.url + '" target="_blank">Deployed Site</a>');
+        tempCard.find(".project-card-content").prepend(`<a class="card-text p-2 mr-1" href="${proj.url}" target="_blank">Deployed Site</a>`);
     }
     var cardWrapper = $("<div>");
     cardWrapper.addClass("col-12 col-lg-12 col-xl-6 animated flipInX");
