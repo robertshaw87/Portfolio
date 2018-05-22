@@ -83,10 +83,10 @@ function displayProfile() {
                                 '<div class="card-text text-center">' + 
                                     '<h3>Projects</h3>' + 
                                     '<hr>' + 
-                                    '<button class="btn btn-outline-light project-button project-button-active mb-4" data-tag="Show All" id="show-all">Show All</button>' + 
+                                    '<button class="btn btn-outline-light project-button project-button-active mb-4 p-2 pr-5 pl-5" data-tag="Show All" id="show-all">Show All</button>' + 
                                 '</div>' + 
                                 '<div class="card-text text-center" id="project-buttons-area"></div>' + 
-                                '<button class="btn btn-outline-light project-button mt-4 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>' + 
+                                '<button class="btn btn-outline-light project-button mt-4 p-2 pr-5 pl-5 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>' + 
                             '</div>' + 
                         '</div>' + 
                     '</div>' + 
