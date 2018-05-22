@@ -34,8 +34,14 @@ var projectList = [{name: "MoveMe",
                     description: "Explore a wide variety of gifs from Giphy and save your favorites.",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
                     GHurl: "https://github.com/robertshaw87/Giphy-Library"
+                }, {name: "Liri",
+                    tags: ["Just For Fun"],
+                    image: "assets/images/Liri.png",
+                    description: "A little helper program based on Apple's Siri.",
+                    url: false,
+                    GHurl: "https://github.com/robertshaw87/Liri-Bot"
                 }];
-var projectButtonsList = ["Html", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Google Maps"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
@@ -52,7 +58,7 @@ function displayHome() {
                         '<div class="card-text" id="about-me-text">' + 
                             '<h3>About Me</h3>' + 
                             '<hr>' + 
-                            "<p>Hello! My name is Robert Shaw, and I'm a Full Stack and Back End developer in training.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to begin a career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>" + 
+                            "<p>Hello! My name is Robert Shaw, and I'm a Full Stack and Back End developer.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to grow my career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>" + 
                             '<button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>' + 
                         '</div>' + 
                     '</div>' + 
@@ -73,13 +79,14 @@ function displayProfile() {
                 '<div class="row m-0">' + 
                     '<div class="col-12 col-md-4 col-lg-3 p-0">' + 
                         '<div class="card mt-5 text-light black-background" id="project-buttons-card">' + 
-                            '<div class="card-body">' + 
+                            '<div class="card-body text-center">' + 
                                 '<div class="card-text text-center">' + 
                                     '<h3>Projects</h3>' + 
                                     '<hr>' + 
-                                    '<button class="btn btn-outline-light project-button project-button-active" data-tag="Show All" id="show-all">Show All</button>' + 
+                                    '<button class="btn btn-outline-light project-button project-button-active mb-4" data-tag="Show All" id="show-all">Show All</button>' + 
                                 '</div>' + 
                                 '<div class="card-text text-center" id="project-buttons-area"></div>' + 
+                                '<button class="btn btn-outline-light project-button mt-4 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>' + 
                             '</div>' + 
                         '</div>' + 
                     '</div>' + 
@@ -99,7 +106,7 @@ function displayButtons() {
     $("#project-buttons-area").empty();
     for (var i = 0; i < projectButtonsList.length; i++) {
         var newButton = $("<button>");
-        newButton.addClass("btn btn-outline-light project-button ml-2 mr-2 mt-3 animated fadeIn");
+        newButton.addClass("btn btn-outline-light project-button ml-2 mr-2 mt-2 mb-2 animated fadeIn");
         newButton.data("tag", projectButtonsList[i]);
         newButton.text(projectButtonsList[i]);
         $("#project-buttons-area").append(newButton);
@@ -124,11 +131,13 @@ function makeCard(proj) {
         '<div class="card-img-overlay project-card-overlay">' + 
                 '<p class="card-text mb-4 project-card-descrip">' + proj.description + '</p>' + 
                 '<div class="project-card-content p-0 m-0 text-center">' + 
-                    '<a class="card-text p-2 mr-1" href="' + proj.url + '" target="_blank">Deployed Site</a>' + 
-                    '<a class="card-text p-2 ml-1" href="' + proj.GHurl + '">Github Page</a>' + 
+                    '<a class="card-text p-2 ml-1" href="' + proj.GHurl + '" target="_blank">Github Page</a>' + 
                 '</div>' + 
         '</div>'
     );
+    if (proj.url) {
+        tempCard.find(".project-card-content").prepend('<a class="card-text p-2 mr-1" href="' + proj.url + '" target="_blank">Deployed Site</a>');
+    }
     var cardWrapper = $("<div>");
     cardWrapper.addClass("col-12 col-lg-12 col-xl-6 animated flipInX");
     cardWrapper.html(tempCard);

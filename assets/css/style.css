@@ -145,6 +145,12 @@ hr {
     color: #f8f9fa;
 }
 
+@media (min-width: 400px) {
+    .project-card-content a {
+        font-size: 16px !important;
+    }
+}
+
 @media (min-width: 576px) {
     #header-text {
         display: initial;
@@ -205,5 +211,20 @@ hr {
     }
     .project-card-descrip {
         font-size: 16px;
+    }
+    .project-card-content a {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .project-card-overlay {
+        padding: 5px !important;
+    }
+    .project-card-descrip {
+        font-size: 16px;
+    }
+    .project-card-content a {
+        font-size: 18px !important;
     }
 }
