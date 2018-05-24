@@ -34,14 +34,20 @@ var projectList = [{name: "MoveMe",
                     description: "Explore a wide variety of gifs from Giphy and save your favorites.",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
                     GHurl: "https://github.com/robertshaw87/Giphy-Library"
+                }, {name: "Mystery Fruit",
+                    tags: ["Just For Fun", "Node.js"],
+                    image: "assets/images/mystery-fruit.png",
+                    description: "Guess the mystery fruit!",
+                    url: false,
+                    GHurl: "https://github.com/robertshaw87/Mystery-Fruit"
                 }, {name: "Liri",
-                    tags: ["Just For Fun"],
+                    tags: ["Just For Fun", "Node.js"],
                     image: "assets/images/Liri.png",
                     description: "A little helper program based on Apple's Siri.",
                     url: false,
                     GHurl: "https://github.com/robertshaw87/Liri-Bot"
                 }];
-var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
