@@ -46,8 +46,15 @@ var projectList = [{name: "MoveMe",
                     description: "A little helper program based on Apple's Siri.",
                     url: false,
                     GHurl: "https://github.com/robertshaw87/Liri-Bot"
+                }, {
+                    name: "Bob's Emporium of Wonders",
+                    tags: ["Just For Fun", "Node.js", "SQL"],
+                    image: "assets/images/inventory-management.png",
+                    description: "An app for managing and purchasing items",
+                    url: false,
+                    GHurl: "https://github.com/robertshaw87/Inventory-Management"
                 }];
-var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js", "SQL"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
