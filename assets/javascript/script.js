@@ -22,6 +22,12 @@ var projectList = [{name: "MoveMe",
                     description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
                     url: "https://robertshaw87.github.io/Battle-Game/",
                     GHurl: "https://github.com/robertshaw87/Battle-Game"
+                }, {name: "Pet Pals",
+                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Show All"],
+                    image: "assets/images/PetPals.png",
+                    description: "Find a new friend for your pet!",
+                    url: "https://peaceful-dusk-98568.herokuapp.com/",
+                    GHurl: "https://github.com/robertshaw87/Friend-Finder"
                 }, {name: "Explore the Stars",
                     tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
                     image: "assets/images/WordGuess.jpg",
@@ -29,7 +35,7 @@ var projectList = [{name: "MoveMe",
                     url: "https://robertshaw87.github.io/Word-Guess-Game/",
                     GHurl: "https://github.com/robertshaw87/Word-Guess-Game"
                 }, {name: "Giphy Pets Library",
-                    tags: ["Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap", "Show All"],
+                    tags: ["Just For Fun", "Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap"],
                     image: "assets/images/Giphy.jpg",
                     description: "Explore a wide variety of gifs from Giphy and save your favorites.",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
@@ -54,7 +60,7 @@ var projectList = [{name: "MoveMe",
                     url: false,
                     GHurl: "https://github.com/robertshaw87/Inventory-Management"
                 }];
-var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js", "SQL"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Express.js", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js", "SQL"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
