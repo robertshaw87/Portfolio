@@ -116,6 +116,7 @@ hr {
     padding: 15px !important;
     margin: 0 !important;
     font-size: 14px;
+    overflow-y: auto;
 }
 
 .project-card:hover .project-card-overlay, .project-card-overlay:hover {

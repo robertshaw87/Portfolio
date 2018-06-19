@@ -1,47 +1,53 @@
-var projectList = [{name: "MoveMe",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Google Maps", "Show All"],
+var projectList = [{name: "ME.dia",
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Node.js", "Express.js", "SQL", "Handlebars", "Show All"],
+                    image: "assets/images/media.png",
+                    description: "ME.dia analyzes your preferences to deliver cross media recommendations.",
+                    url: "https://media-2018.herokuapp.com/",
+                    GHurl: "https://github.com/robertshaw87/ME-dia"
+                }, {name: "MoveMe",
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Show All"],
                     image: "assets/images/MoveMe.jpg",
                     description: "MoveMe is the all in one app for getting involved in your local community.",
                     url: "https://robertshaw87.github.io/MoveMe/",
                     GHurl: "https://github.com/robertshaw87/MoveMe"
                 }, {name: "Rock Paper Scissors",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Show All"],
                     image: "assets/images/RPS.jpg",
                     description: "Play with other users over the web or chat with the built in service.",
                     url: "https://robertshaw87.github.io/Rock-Paper-Scissors/",
                     GHurl: "https://github.com/robertshaw87/Rock-Paper-Scissors"
                 }, {name: "Animal Facts!",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
                     image: "assets/images/Trivia.jpg",
                     description: "Tackle trivia questions and learn new facts. Be wary of the time limit!",
                     url: "https://robertshaw87.github.io/Trivia-Game/",
                     GHurl: "https://github.com/robertshaw87/Trivia-Game"
                 }, {name: "Triwizard Dueling Arena",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
                     image: "assets/images/Battle.jpg",
                     description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
                     url: "https://robertshaw87.github.io/Battle-Game/",
                     GHurl: "https://github.com/robertshaw87/Battle-Game"
                 }, {name: "Pet Pals",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Show All"],
                     image: "assets/images/PetPals.png",
                     description: "Find a new friend for your pet!",
                     url: "https://peaceful-dusk-98568.herokuapp.com/",
                     GHurl: "https://github.com/robertshaw87/Friend-Finder"
                 }, {name: "Restaurant Tracker",
-                    tags: ["Html", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "SQL", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "SQL", "Show All"],
                     image: "assets/images/Restaurant-Tracker.png",
                     description: "Create a list of restaurants you wish to visit and save whether you liked them or not!",
                     url: "https://fathomless-coast-46070.herokuapp.com/",
                     GHurl: "https://github.com/robertshaw87/Restaurant-Tracker"
                 }, {name: "Explore the Stars",
-                    tags: ["Just For Fun", "Html", "CSS", "Javascript", "jQuery", "Bootstrap"],
+                    tags: ["Just For Fun", "HTML", "CSS", "Javascript", "jQuery", "Bootstrap"],
                     image: "assets/images/WordGuess.jpg",
                     description: "Guess the chosen word within a limited number of tries!",
                     url: "https://robertshaw87.github.io/Word-Guess-Game/",
                     GHurl: "https://github.com/robertshaw87/Word-Guess-Game"
                 }, {name: "Giphy Pets Library",
-                    tags: ["Just For Fun", "Html", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap"],
+                    tags: ["Just For Fun", "HTML", "CSS", "Javascript", "APIs", "jQuery", "Bootstrap"],
                     image: "assets/images/Giphy.jpg",
                     description: "Explore a wide variety of gifs from Giphy and save your favorites.",
                     url: "https://robertshaw87.github.io/Giphy-Library/",
@@ -66,7 +72,7 @@ var projectList = [{name: "MoveMe",
                     url: false,
                     GHurl: "https://github.com/robertshaw87/Inventory-Management"
                 }];
-var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Express.js", "Google Firebase", "Google Maps", "Html", "Javascript", "jQuery", "Node.js", "SQL"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Express.js", "Google Firebase", "Handlebars", "HTML", "Javascript", "jQuery", "Node.js", "SQL"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
@@ -94,7 +100,7 @@ function displayHome() {
     `)
 }
 
-function displayProfile() {
+function displayPortfolio() {
     $("#home-button").removeClass("current-page");
     $("#portfolio-button").addClass("current-page");
     $("#main-display").html(`
@@ -170,7 +176,7 @@ function makeCard(proj) {
 }
 
 $(document).on("click", "#home-button", displayHome);
-$(document).on("click", "#portfolio-button", displayProfile);
+$(document).on("click", "#portfolio-button", displayPortfolio);
 $(document).on("click", ".project-button", function (event) {
     $(".project-button-active").removeClass("project-button-active");
     $(this).addClass("project-button-active")
