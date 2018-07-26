@@ -1,41 +1,41 @@
 var projectList = [{name: "ME.dia",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Node.js", "Express.js", "SQL", "Handlebars", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Node.js", "Express.js", "SQL", "Handlebars", "Highlights"],
                     image: "assets/images/media.png",
                     description: "ME.dia analyzes your preferences to deliver cross media recommendations.",
                     url: "https://media-2018.herokuapp.com/",
                     GHurl: "https://github.com/robertshaw87/ME-dia"
                 }, {name: "MoveMe",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Google Firebase", "Highlights"],
                     image: "assets/images/MoveMe.jpg",
                     description: "MoveMe is the all in one app for getting involved in your local community.",
                     url: "https://robertshaw87.github.io/MoveMe/",
                     GHurl: "https://github.com/robertshaw87/MoveMe"
                 }, {name: "Rock Paper Scissors",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Highlights"],
                     image: "assets/images/RPS.jpg",
                     description: "Play with other users over the web or chat with the built in service.",
                     url: "https://robertshaw87.github.io/Rock-Paper-Scissors/",
                     GHurl: "https://github.com/robertshaw87/Rock-Paper-Scissors"
                 }, {name: "Animal Facts!",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Highlights"],
                     image: "assets/images/Trivia.jpg",
                     description: "Tackle trivia questions and learn new facts. Be wary of the time limit!",
                     url: "https://robertshaw87.github.io/Trivia-Game/",
                     GHurl: "https://github.com/robertshaw87/Trivia-Game"
                 }, {name: "Triwizard Dueling Arena",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Highlights"],
                     image: "assets/images/Battle.jpg",
                     description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
                     url: "https://robertshaw87.github.io/Battle-Game/",
                     GHurl: "https://github.com/robertshaw87/Battle-Game"
                 }, {name: "Pet Pals",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Highlights"],
                     image: "assets/images/PetPals.png",
                     description: "Find a new friend for your pet!",
                     url: "https://peaceful-dusk-98568.herokuapp.com/",
                     GHurl: "https://github.com/robertshaw87/Friend-Finder"
                 }, {name: "Restaurant Tracker",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "SQL", "Show All"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "SQL", "Highlights"],
                     image: "assets/images/Restaurant-Tracker.png",
                     description: "Create a list of restaurants you wish to visit and save whether you liked them or not!",
                     url: "https://fathomless-coast-46070.herokuapp.com/",
@@ -114,7 +114,7 @@ function displayPortfolio() {
                                 <div class="card-text text-center">
                                     <h3>Projects</h3>
                                     <hr>
-                                    <button class="btn btn-outline-light project-button project-button-active mb-4 p-2 pr-5 pl-5" data-tag="Show All" id="show-all">Show All</button>
+                                    <button class="btn btn-outline-light project-button project-button-active mb-4 p-2 pr-5 pl-5" data-tag="Highlights" id="show-all">Highlights</button>
                                 </div>
                                 <div class="card-text text-center" id="project-buttons-area"></div>
                                 <button class="btn btn-outline-light project-button mt-4 p-2 pr-5 pl-5 animated fadeIn" data-tag="Just For Fun" id="just-for-fun">Just For Fun</button>
@@ -130,7 +130,7 @@ function displayPortfolio() {
         </div>
     `);
     displayButtons();
-    displayProjects("Show All")
+    displayProjects("Highlights")
 }
 
 function displayButtons() {
