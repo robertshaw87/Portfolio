@@ -1,4 +1,10 @@
-var projectList = [{name: "ME.dia",
+var projectList = [{name: "Career Deer",
+                    tags: ["HTML", "CSS", "Javascript", "APIs", "Bootstrap", "Node.js", "Express.js", "MongoDB", "React.js", "Redux.js", "Highlights"],
+                    image: "assets/images/career-deer.png",
+                    description: "Career Deer helps you find jobs and track your application progress.",
+                    url: "https://careerdeer.herokuapp.com",
+                    GHurl: "https://github.com/jimmytutron/career-deer"
+                }, {name: "ME.dia",
                     tags: ["HTML", "CSS", "Javascript", "jQuery", "APIs", "Bootstrap", "Node.js", "Express.js", "SQL", "Handlebars", "Highlights"],
                     image: "assets/images/media.png",
                     description: "ME.dia analyzes your preferences to deliver cross media recommendations.",
@@ -10,6 +16,18 @@ var projectList = [{name: "ME.dia",
                     description: "MoveMe is the all in one app for getting involved in your local community.",
                     url: "https://robertshaw87.github.io/MoveMe/",
                     GHurl: "https://github.com/robertshaw87/MoveMe"
+                }, {name: "Memory Game",
+                    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "React.js", "Highlights"],
+                    image: "assets/images/Memory.png",
+                    description: "Click the images you haven't selected before. The game ends when you repeat a click.",
+                    url: "https://robertshaw87.github.io/memory-check/",
+                    GHurl: "https://github.com/robertshaw87/memory-check"
+                }, {name: "Definitely Not an Onion Scraper",
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "MongoDB", "Express.js", "Node.js", "Highlights"],
+                    image: "assets/images/notOnion.png",
+                    description: "Save and add notes to interesting news articles that are actually true.",
+                    url: "https://not-an-onion-scraper.herokuapp.com/",
+                    GHurl: "https://github.com/robertshaw87/DefinitelyNotAnOnionScraper"
                 }, {name: "Rock Paper Scissors",
                     tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Google Firebase", "Highlights"],
                     image: "assets/images/RPS.jpg",
@@ -22,14 +40,14 @@ var projectList = [{name: "ME.dia",
                     description: "Tackle trivia questions and learn new facts. Be wary of the time limit!",
                     url: "https://robertshaw87.github.io/Trivia-Game/",
                     GHurl: "https://github.com/robertshaw87/Trivia-Game"
-                }, {name: "Triwizard Dueling Arena",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Highlights"],
-                    image: "assets/images/Battle.jpg",
-                    description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
-                    url: "https://robertshaw87.github.io/Battle-Game/",
-                    GHurl: "https://github.com/robertshaw87/Battle-Game"
+                }, {name: "New York Times Scraper",
+                    tags: ["HTML", "CSS", "Javascript", "React.js", "MongoDB", "Express.js", "Node.js"],
+                    image: "assets/images/NYTScrape.png",
+                    description: "Search for interesting New York Times articles and save them to view later.",
+                    url: "https://scraper-nyt-react.herokuapp.com/",
+                    GHurl: "https://github.com/robertshaw87/nyt-scraper-mern"
                 }, {name: "Pet Pals",
-                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js", "Highlights"],
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap", "Node.js", "Express.js"],
                     image: "assets/images/PetPals.png",
                     description: "Find a new friend for your pet!",
                     url: "https://peaceful-dusk-98568.herokuapp.com/",
@@ -40,6 +58,12 @@ var projectList = [{name: "ME.dia",
                     description: "Create a list of restaurants you wish to visit and save whether you liked them or not!",
                     url: "https://fathomless-coast-46070.herokuapp.com/",
                     GHurl: "https://github.com/robertshaw87/Restaurant-Tracker"
+                }, {name: "Triwizard Dueling Arena",
+                    tags: ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap"],
+                    image: "assets/images/Battle.jpg",
+                    description: "Select a champion and enter the new dueling event at the Triwizard Tournament!",
+                    url: "https://robertshaw87.github.io/Battle-Game/",
+                    GHurl: "https://github.com/robertshaw87/Battle-Game"
                 }, {name: "Explore the Stars",
                     tags: ["Just For Fun", "HTML", "CSS", "Javascript", "jQuery", "Bootstrap"],
                     image: "assets/images/WordGuess.jpg",
@@ -72,7 +96,7 @@ var projectList = [{name: "ME.dia",
                     url: false,
                     GHurl: "https://github.com/robertshaw87/Inventory-Management"
                 }];
-var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Express.js", "Google Firebase", "Handlebars", "HTML", "Javascript", "jQuery", "Node.js", "SQL"]
+var projectButtonsList = ["APIs", "Bootstrap", "CSS", "Express.js", "Google Firebase", "HTML", "Javascript", "jQuery", "MongoDB", "Node.js", "React.js", "Redux.js", "SQL"]
 
 function displayHome() {
     $("#home-button").addClass("current-page");
