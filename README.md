@@ -34,9 +34,7 @@ No installation needed! Just open the page in your preferred browser.
 
 ## Challenges
 
-![Dynamic Generation](assets/images/DynamicGeneration.png "Dynamic Generation")
-
-I tried a different style of dynamic generation. Instead of creating multiple elements with jQuery and appending them together, I used the .html() method to input a long string of html that I concatenated together. It ends up being much easier to read depending on my formatting.
+I thought about converting my portfolio to React.js, but after thinking about the load times, I decided against it. There aren't enough interactive elements on my page to warrant the initial load time that React.js brings to a page. I might create a seperate portfolio using React.js at a later date, but functionality comes first.
 
 ## Authors
 
