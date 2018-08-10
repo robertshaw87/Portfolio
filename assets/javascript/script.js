@@ -113,7 +113,7 @@ function displayHome() {
                         <div class="card-text" id="about-me-text">
                             <h3>About Me</h3>
                             <hr>
-                            <p>Hello! My name is Robert Shaw, and I'm a Full Stack developer.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and usually develops a strong professional relationship with my teammates. I'm looking for an opportunity to grow my career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>
+                            <p>Hello! My name is Robert Shaw, and I'm a Full Stack developer.</p><p>I am skilled at combining my background in Computer Science and my experience with online resources to quickly learn new technologies and overcome challenges. I love expanding and utilizing my knowledge base through creating interesting apps.</p><p>I'm a very positive person who works well with others and maintains a strong professional relationship with my teammates. I'm looking for an opportunity to grow my career and apply my skills.</p><p>Thank you for your interest. I look forward to hearing from you!</p>
                             <button class="btn btn-outline-light float-right" id="portfolio-button">My Portfolio ➯</button>
                         </div>
                     </div>
